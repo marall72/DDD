@@ -1,9 +1,8 @@
-﻿using Customers.Application.Command;
-using Shared.Entity;
+﻿using Shared.Entity;
 using Customers.Repository;
 using Shared.Model;
 
-namespace Customers.Application.Handler
+namespace Customers.Application.CreateCustomer
 {
     public class CreateCustomerHandler
     {

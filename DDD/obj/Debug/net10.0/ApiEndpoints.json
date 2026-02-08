@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "cmd",
-        "Type": "Customers.Application.Command.CreateCustomerCommand",
+        "Type": "Customers.Application.CreateCustomer.CreateCustomerCommand",
         "IsRequired": true
       }
     ],

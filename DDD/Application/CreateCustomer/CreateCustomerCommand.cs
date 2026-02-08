@@ -1,4 +1,4 @@
-﻿namespace Customers.Application.Command
+﻿namespace Customers.Application.CreateCustomer
 {
     public record CreateCustomerCommand(string FirstName, string LastName, string Email);
 }
