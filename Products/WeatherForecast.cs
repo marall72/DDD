@@ -1,4 +1,4 @@
-namespace CQRS
+namespace Products
 {
     public class WeatherForecast
     {

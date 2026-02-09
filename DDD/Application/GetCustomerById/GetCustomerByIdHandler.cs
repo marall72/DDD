@@ -1,5 +1,5 @@
-﻿using Customers.Repository;
-using Shared.Entity;
+﻿using Customers.Infrastructure;
+using Customers.Entity;
 
 namespace Customers.Application.GetCustomerById
 {

@@ -1,6 +1,6 @@
-﻿using Shared.Entity;
+﻿using Customers.Entity;
 
-namespace Customers.Repository
+namespace Customers.Infrastructure
 {
     public interface ICustomerRepository
     {

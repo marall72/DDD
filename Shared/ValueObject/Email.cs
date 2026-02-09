@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared.ValueObject
 {
-    public class Email
+    public class Email : ValueObject
     {
         public string Value { get; private set; }
 
@@ -19,6 +19,11 @@ namespace Shared.ValueObject
                 throw new ArgumentException("Email cannot be longer than 255 characters.");
 
             Value = value;
+        }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            throw new NotImplementedException();
         }
     }
 }

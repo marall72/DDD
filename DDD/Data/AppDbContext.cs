@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Shared.Entity;
+using Customers.Entity;
 namespace Customers.Data
 {
     public class AppDbContext : DbContext

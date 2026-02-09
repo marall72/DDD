@@ -1,6 +1,6 @@
-﻿using Shared.Entity;
-using Customers.Repository;
+﻿using Customers.Entity;
 using Shared.Model;
+using Customers.Infrastructure;
 
 namespace Customers.Application.CreateCustomer
 {

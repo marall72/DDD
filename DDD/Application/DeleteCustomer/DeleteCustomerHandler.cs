@@ -1,4 +1,4 @@
-﻿using Customers.Repository;
+﻿using Customers.Infrastructure;
 using Shared.Model;
 
 namespace Customers.Application.DeleteCustomer

@@ -4,7 +4,6 @@ using Customers.Application.GetAllCustomers;
 using Customers.Application.GetCustomerById;
 using Customers.Data;
 using Customers.Infrastructure;
-using Customers.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi;
 

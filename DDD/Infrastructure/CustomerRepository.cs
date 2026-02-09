@@ -1,7 +1,6 @@
 ﻿using Customers.Data;
-using Shared.Entity;
+using Customers.Entity;
 using Microsoft.EntityFrameworkCore;
-using Customers.Repository;
 
 namespace Customers.Infrastructure
 {
