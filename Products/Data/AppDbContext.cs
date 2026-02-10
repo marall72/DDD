@@ -20,9 +20,9 @@ namespace Products.Data
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.Title).IsRequired().HasMaxLength(255);
                 entity.Property(e => e.Quantity).IsRequired();
-                entity.OwnsOne(e => e.Email, email =>
+                entity.OwnsOne(e => e.Price, price =>
                 {
-                    email.Property(e => e.Value).IsRequired().HasMaxLength(255).HasColumnName("Email");
+                    //price.Property(e => e.Value).IsRequired().HasColumnName("Price");
                 });
             });
         }

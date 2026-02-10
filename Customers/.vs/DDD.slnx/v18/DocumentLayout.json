@@ -1,0 +1,595 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC58ABB-E5F7-42AC-879B-5F20FBB014B3}|..\\Shared\\Shared.csproj|c:\\users\\katebi\\source\\repos\\ddd\\shared\\valueobject\\price.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561A455F-B862-4F47-96BA-865DEF944EB3}|..\\Products\\Products.csproj|c:\\users\\katebi\\source\\repos\\ddd\\products\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561A455F-B862-4F47-96BA-865DEF944EB3}|..\\Products\\Products.csproj|c:\\users\\katebi\\source\\repos\\ddd\\products\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC58ABB-E5F7-42AC-879B-5F20FBB014B3}|..\\Shared\\Shared.csproj|c:\\users\\katebi\\source\\repos\\ddd\\shared\\valueobject\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC58ABB-E5F7-42AC-879B-5F20FBB014B3}|..\\Shared\\Shared.csproj|c:\\users\\katebi\\source\\repos\\ddd\\shared\\valueobject\\valueobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\entity\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:entity\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\infrastructure\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:infrastructure\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\infrastructure\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:infrastructure\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\getcustomerbyid\\getcustomerbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\getcustomerbyid\\getcustomerbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\getallcustomers\\getallcustomershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\getallcustomers\\getallcustomershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\createcustomer\\createcustomerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\createcustomer\\createcustomerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\customers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:customers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561A455F-B862-4F47-96BA-865DEF944EB3}|..\\Products\\Products.csproj|c:\\users\\katebi\\source\\repos\\ddd\\products\\infrastructure\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561A455F-B862-4F47-96BA-865DEF944EB3}|..\\Products\\Products.csproj|c:\\users\\katebi\\source\\repos\\ddd\\products\\infrastructure\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561A455F-B862-4F47-96BA-865DEF944EB3}|..\\Products\\Products.csproj|c:\\users\\katebi\\source\\repos\\ddd\\products\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\getallcustomers\\getallcustomersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\getallcustomers\\getallcustomersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\getcustomerbyid\\getcustomerbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\getcustomerbyid\\getcustomerbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\deletecustomer\\deletecustomerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\deletecustomer\\deletecustomerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC58ABB-E5F7-42AC-879B-5F20FBB014B3}|..\\Shared\\Shared.csproj|c:\\users\\katebi\\source\\repos\\ddd\\shared\\shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BC58ABB-E5F7-42AC-879B-5F20FBB014B3}|..\\Shared\\Shared.csproj|c:\\users\\katebi\\source\\repos\\ddd\\shared\\model\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\application\\deletecustomer\\deletecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:application\\deletecustomer\\deletecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|c:\\users\\katebi\\source\\repos\\ddd\\ddd\\migrations\\20260208103231_addedcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD66B8E-5911-C49B-28F4-2CBE03DFEFCB}|Customers.csproj|solutionrelative:migrations\\20260208103231_addedcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 199,
+          "SelectedChildIndex": 34,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a0c5197d-0ac7-4b63-97cd-8872a789d233}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Price.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\Price.cs",
+              "RelativeDocumentMoniker": "..\\Shared\\ValueObject\\Price.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\Price.cs",
+              "RelativeToolTip": "..\\Shared\\ValueObject\\Price.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T12:23:46.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Entity\\Product.cs",
+              "RelativeDocumentMoniker": "..\\Products\\Entity\\Product.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Entity\\Product.cs",
+              "RelativeToolTip": "..\\Products\\Entity\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T12:00:22.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:56:09.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Infrastructure\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Infrastructure\\CustomerRepository.cs",
+              "RelativeToolTip": "Infrastructure\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:31:01.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Infrastructure\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Infrastructure\\ICustomerRepository.cs",
+              "RelativeToolTip": "Infrastructure\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:54:43.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Entity\\Customer.cs",
+              "RelativeDocumentMoniker": "Entity\\Customer.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Entity\\Customer.cs",
+              "RelativeToolTip": "Entity\\Customer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCkAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:53:46.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Products\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\Products\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:37:20.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\Email.cs",
+              "RelativeDocumentMoniker": "..\\Shared\\ValueObject\\Email.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\Email.cs",
+              "RelativeToolTip": "..\\Shared\\ValueObject\\Email.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T10:08:16.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValueObject.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\ValueObject.cs",
+              "RelativeDocumentMoniker": "..\\Shared\\ValueObject\\ValueObject.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\ValueObject\\ValueObject.cs",
+              "RelativeToolTip": "..\\Shared\\ValueObject\\ValueObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T12:22:44.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetCustomerByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetCustomerById\\GetCustomerByIdHandler.cs",
+              "RelativeDocumentMoniker": "Application\\GetCustomerById\\GetCustomerByIdHandler.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetCustomerById\\GetCustomerByIdHandler.cs",
+              "RelativeToolTip": "Application\\GetCustomerById\\GetCustomerByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T12:26:24.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetAllCustomersHandler.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetAllCustomers\\GetAllCustomersHandler.cs",
+              "RelativeDocumentMoniker": "Application\\GetAllCustomers\\GetAllCustomersHandler.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetAllCustomers\\GetAllCustomersHandler.cs",
+              "RelativeToolTip": "Application\\GetAllCustomers\\GetAllCustomersHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T12:24:13.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateCustomerHandler.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\CreateCustomer\\CreateCustomerHandler.cs",
+              "RelativeDocumentMoniker": "Application\\CreateCustomer\\CreateCustomerHandler.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\CreateCustomer\\CreateCustomerHandler.cs",
+              "RelativeToolTip": "Application\\CreateCustomer\\CreateCustomerHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T08:25:10.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customers.csproj",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Customers.csproj",
+              "RelativeDocumentMoniker": "Customers.csproj",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Customers.csproj",
+              "RelativeToolTip": "Customers.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-09T11:53:16.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Infrastructure\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "..\\Products\\Infrastructure\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Infrastructure\\IProductRepository.cs",
+              "RelativeToolTip": "..\\Products\\Infrastructure\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:50:54.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Infrastructure\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "..\\Products\\Infrastructure\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Infrastructure\\ProductRepository.cs",
+              "RelativeToolTip": "..\\Products\\Infrastructure\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:49:53.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "..\\Products\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Products\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "..\\Products\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:35:51.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetCustomerByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetCustomerById\\GetCustomerByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\GetCustomerById\\GetCustomerByIdQuery.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetCustomerById\\GetCustomerByIdQuery.cs",
+              "RelativeToolTip": "Application\\GetCustomerById\\GetCustomerByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T12:16:35.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DeleteCustomerHandler.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\DeleteCustomer\\DeleteCustomerHandler.cs",
+              "RelativeDocumentMoniker": "Application\\DeleteCustomer\\DeleteCustomerHandler.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\DeleteCustomer\\DeleteCustomerHandler.cs",
+              "RelativeToolTip": "Application\\DeleteCustomer\\DeleteCustomerHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T08:25:19.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwEMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T10:52:05.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetAllCustomersQuery.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetAllCustomers\\GetAllCustomersQuery.cs",
+              "RelativeDocumentMoniker": "Application\\GetAllCustomers\\GetAllCustomersQuery.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\GetAllCustomers\\GetAllCustomersQuery.cs",
+              "RelativeToolTip": "Application\\GetAllCustomers\\GetAllCustomersQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T12:16:07.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T10:37:33.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260208103231_addedCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Migrations\\20260208103231_addedCustomer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260208103231_addedCustomer.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Migrations\\20260208103231_addedCustomer.cs",
+              "RelativeToolTip": "Migrations\\20260208103231_addedCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T10:32:32.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-08T08:04:17.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "Application\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeToolTip": "Application\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T08:23:52.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Shared.csproj",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\Shared.csproj",
+              "RelativeDocumentMoniker": "..\\Shared\\Shared.csproj",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\Shared.csproj",
+              "RelativeToolTip": "..\\Shared\\Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T10:19:11.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\Model\\Result.cs",
+              "RelativeDocumentMoniker": "..\\Shared\\Model\\Result.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\Shared\\Model\\Result.cs",
+              "RelativeToolTip": "..\\Shared\\Model\\Result.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T09:08:37.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DeleteCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "RelativeDocumentMoniker": "Application\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\katebi\\source\\repos\\DDD\\DDD\\Application\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "RelativeToolTip": "Application\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T08:24:40.566Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Solution Items/" />
+  <Project Path="Customers/Customers.csproj" />
+  <Project Path="Products/Products.csproj" />
+  <Project Path="Shared/Shared.csproj" />
+</Solution>
