@@ -22,7 +22,7 @@ namespace Products.Data
                 entity.Property(e => e.Quantity).IsRequired();
                 entity.OwnsOne(e => e.Price, price =>
                 {
-                    //price.Property(e => e.Value).IsRequired().HasColumnName("Price");
+                    price.Property(e => e.Value).IsRequired().HasColumnName("Price");
                 });
             });
         }
