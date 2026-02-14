@@ -1,16 +1,21 @@
 using Microsoft.OpenApi;
+using Products.Application.CreateProduct;
+using Products.Application.DeleteProduct;
+using Products.Application.GetAllProducts;
+using Products.Application.GetProductById;
 using Products.Data;
+using Products.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-//builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
-//builder.Services.AddScoped<CreateCustomerHandler>();
-//builder.Services.AddScoped<DeleteCustomerHandler>();
-//builder.Services.AddScoped<GetCustomerByIdHandler>();
-//builder.Services.AddScoped<GetAllCustomersHandler>();
+builder.Services.AddScoped<CreateProductHandler>();
+builder.Services.AddScoped<DeleteProductHandler>();
+builder.Services.AddScoped<GetProductByIdHandler>();
+builder.Services.AddScoped<GetAllProductsHandler>();
 builder.Services.AddControllers();
 builder.Services.AddSqlServer<AppDbContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

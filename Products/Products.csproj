@@ -19,13 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\CreateProduct\" />
-    <Folder Include="Application\DeleteProduct\" />
-    <Folder Include="Application\GetAllProducts\" />
-    <Folder Include="Application\GetProductById\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
 

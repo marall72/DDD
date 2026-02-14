@@ -1,26 +1,74 @@
+using Products.Application.CreateProduct;
+using Products.Application.DeleteProduct;
+using Products.Application.GetAllProducts;
+using Products.Application.GetProductById;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Products.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class ProductController : ControllerBase
+    [Route("api/[controller]")]
+    public class CustomerController : ControllerBase
     {
-        private static readonly string[] Summaries =
-        [
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        ];
+        private readonly CreateProductHandler _createHandler;
+        private readonly DeleteProductHandler _deleteHandler;
+        private readonly GetProductByIdHandler _getByIdHandler;
+        private readonly GetAllProductsHandler _getAllHandler;
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public CustomerController(
+            CreateProductHandler createHandler,
+            DeleteProductHandler deleteHandler,
+            GetProductByIdHandler getByIdHandler,
+            GetAllProductsHandler getAllHandler)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+            _createHandler = createHandler;
+            _deleteHandler = deleteHandler;
+            _getByIdHandler = getByIdHandler;
+            _getAllHandler = getAllHandler;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateProductCommand cmd)
+        {
+            var result = await _createHandler.Handle(cmd);
+
+            if (result.IsSuccess)
+                return Ok(new { success = true, productId = result.Value });
+            else
+                return BadRequest(new { success = false, error = result.Error });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var result = await _getAllHandler.Handle(new GetAllProductsQuery(0, 0));
+
+            if (result != null && result.Any())
+                return Ok(new { success = true, count = result.Count, data = result });
+            else
+                return NotFound(new { success = false, message = "No products found" });
+        }
+
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var customer = await _getByIdHandler.Handle(new GetProductByIdQuery(id));
+
+            if (customer == null)
+                return NotFound(new { success = false, message = "Product not found" });
+
+            return Ok(new { success = true, data = customer });
+        }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var result = await _deleteHandler.Handle(new DeleteProductCommand(id));
+
+            if (!result.IsSuccess)
+                return BadRequest(new { success = false, error = result.Error });
+
+            return Ok(new { success = true, message = "Product deleted successfully", customerId = id });
         }
     }
 }

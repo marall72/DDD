@@ -4,7 +4,7 @@ using Customers.Application.GetAllCustomers;
 using Customers.Application.GetCustomerById;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CQRS.Controllers
+namespace Customers.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

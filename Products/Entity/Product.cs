@@ -9,7 +9,7 @@ namespace Products.Entity
             
         }
 
-        public Product(Guid id, string title, Price price, string description, string quantity)
+        public Product(Guid id, string title, Price price, string description, int quantity)
         {
             
         }
@@ -19,5 +19,10 @@ namespace Products.Entity
         public Price Price { get; set; }
         public string Description { get; set; }
         public int Quantity { get; set; }
+
+        public static Product Create(Guid id, string title, decimal priceAmount, string priceCurrency, string description, int quantity)
+        {
+            return new Product(id, title, new Price(priceAmount, priceCurrency), description, quantity);
+        }
     }
 }
