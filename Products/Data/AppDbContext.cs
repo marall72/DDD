@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Products.Entity;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Products.Data
 {
@@ -14,7 +15,6 @@ namespace Products.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            // Configure Customer entity
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.Id);
@@ -22,8 +22,17 @@ namespace Products.Data
                 entity.Property(e => e.Quantity).IsRequired();
                 entity.OwnsOne(e => e.Price, price =>
                 {
-                    price.Property(e => e.Value).IsRequired().HasColumnName("Price");
-                });
+                    price.Property(p => p.Amount)
+                        .IsRequired()
+                        .HasColumnName("PriceAmount");
+
+                    price.Property(p => p.Currency)
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnName("PriceCurrency");
+                })
+                .Navigation(p => p.Price)
+                .IsRequired();
             });
         }
     }
