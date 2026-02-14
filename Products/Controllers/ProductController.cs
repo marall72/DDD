@@ -8,14 +8,14 @@ namespace Products.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CustomerController : ControllerBase
+    public class ProductController : ControllerBase
     {
         private readonly CreateProductHandler _createHandler;
         private readonly DeleteProductHandler _deleteHandler;
         private readonly GetProductByIdHandler _getByIdHandler;
         private readonly GetAllProductsHandler _getAllHandler;
 
-        public CustomerController(
+        public ProductController(
             CreateProductHandler createHandler,
             DeleteProductHandler deleteHandler,
             GetProductByIdHandler getByIdHandler,
