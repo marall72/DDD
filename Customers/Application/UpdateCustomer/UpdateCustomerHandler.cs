@@ -20,7 +20,11 @@ namespace Customers.Application.UpdateCustomer
             if (!IsValidEmail(cmd.Email))
                 return Result<Guid>.Fail("Invalid email format");
 
-            if (await _repo.ExistsByEmailAsync(cmd.Email))
+            var existingCustomer = await _repo.GetAllAsync(new GetAllCustomers.GetAllCustomersQuery { 
+                Email = new FilterField<string>(cmd.Email, FilterOperator.Equal),
+                Ids = new FilterField<Guid[]>(new[] { cmd.Id }, FilterOperator.NotEqual),
+                TopCount = 1 });
+            if (existingCustomer != null && existingCustomer.Any())
                 return Result<Guid>.Fail("Email already in use");
 
             var customer = Customer.Create(cmd.Id, cmd.FirstName, cmd.LastName, cmd.Email);

@@ -8,7 +8,7 @@ namespace Customers.Infrastructure
         Task AddAsync(Customer customer);
         Task UpdateAsync(Customer customer);
         Task<bool> ExistsByEmailAsync(string email);
-        Task<List<Customer>> GetAllAsync(GetCustomersFilterCriteria criteria);
+        Task<List<Customer>> GetAllAsync(GetAllCustomersQuery criteria);
         Task<Customer?> GetByIdAsync(Guid id);
         Task DeleteAsync(Customer customer);
     }

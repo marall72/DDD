@@ -2,15 +2,15 @@ using Customers.Application.CreateCustomer;
 using Customers.Application.DeleteCustomer;
 using Customers.Application.GetAllCustomers;
 using Customers.Application.GetCustomerById;
+using Customers.Application.UpdateCustomer;
 using Customers.Data;
 using Customers.Infrastructure;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
+using System.Diagnostics;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
@@ -18,12 +18,21 @@ builder.Services.AddScoped<CreateCustomerHandler>();
 builder.Services.AddScoped<DeleteCustomerHandler>();
 builder.Services.AddScoped<GetCustomerByIdHandler>();
 builder.Services.AddScoped<GetAllCustomersHandler>();
+builder.Services.AddScoped<UpdateCustomerHandler>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
-builder.Services.AddSqlServer<AppDbContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    //don't do this if not in development
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .EnableSensitiveDataLogging()
+           .LogTo(message => Debug.WriteLine(message), LogLevel.Information);
+});
 
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "DDD API", Version = "v1" });

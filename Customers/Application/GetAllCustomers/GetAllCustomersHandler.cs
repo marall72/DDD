@@ -15,7 +15,7 @@ namespace Customers.Application.GetAllCustomers
         //TODO: add paging and sorting
         public async Task<List<Customer>> Handle(GetAllCustomersQuery query)
         {
-            return await _repo.GetAllAsync(query.criteria);
+            return await _repo.GetAllAsync(query);
         }
     }
 }

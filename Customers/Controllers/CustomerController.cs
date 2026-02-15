@@ -42,7 +42,7 @@ namespace Customers.Controllers
                 return BadRequest(new { success = false, error = result.Error });
         }
 
-        [HttpPost]
+        [HttpPut]
         public async Task<IActionResult> Update(UpdateCustomerCommand cmd)
         {
             var result = await _updateHandler.Handle(cmd);
@@ -54,7 +54,7 @@ namespace Customers.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(GetAllCustomersQuery cmd)
+        public async Task<IActionResult> GetAll([FromQuery] GetAllCustomersQuery cmd)
         {
             var result = await _getAllHandler.Handle(cmd);
 

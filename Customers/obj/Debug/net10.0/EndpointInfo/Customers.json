@@ -35,9 +35,123 @@
           }
         }
       },
+      "put": {
+        "tags": [
+          "Customer"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCustomerCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "get": {
         "tags": [
           "Customer"
+        ],
+        "parameters": [
+          {
+            "name": "Ids.Value",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          },
+          {
+            "name": "Ids.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "SearchText",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FirstName.Value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FirstName.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "LastName.Value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "LastName.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Email.Value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Email.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "TopCount",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -96,6 +210,43 @@
       "CreateCustomerCommand": {
         "type": "object",
         "properties": {
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FilterOperator": {
+        "enum": [
+          "Equal",
+          "NotEqual",
+          "Contains",
+          "StartsWith",
+          "EndsWith",
+          "GreaterThan",
+          "LessThan",
+          "GreaterOrEqual",
+          "LessOrEqual",
+          "In"
+        ],
+        "type": "string"
+      },
+      "UpdateCustomerCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
           "firstName": {
             "type": "string",
             "nullable": true
