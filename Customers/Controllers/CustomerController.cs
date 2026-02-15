@@ -2,6 +2,7 @@ using Customers.Application.CreateCustomer;
 using Customers.Application.DeleteCustomer;
 using Customers.Application.GetAllCustomers;
 using Customers.Application.GetCustomerById;
+using Customers.Application.UpdateCustomer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Customers.Controllers
@@ -14,17 +15,20 @@ namespace Customers.Controllers
         private readonly DeleteCustomerHandler _deleteHandler;
         private readonly GetCustomerByIdHandler _getByIdHandler;
         private readonly GetAllCustomersHandler _getAllHandler;
+        private readonly UpdateCustomerHandler _updateHandler;
 
         public CustomerController(
             CreateCustomerHandler createHandler,
             DeleteCustomerHandler deleteHandler,
             GetCustomerByIdHandler getByIdHandler,
-            GetAllCustomersHandler getAllHandler)
+            GetAllCustomersHandler getAllHandler,
+            UpdateCustomerHandler updateHandler)
         {
             _createHandler = createHandler;
             _deleteHandler = deleteHandler;
             _getByIdHandler = getByIdHandler;
             _getAllHandler = getAllHandler;
+            _updateHandler = updateHandler;
         }
 
         [HttpPost]
@@ -38,10 +42,21 @@ namespace Customers.Controllers
                 return BadRequest(new { success = false, error = result.Error });
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpPost]
+        public async Task<IActionResult> Update(UpdateCustomerCommand cmd)
         {
-            var result = await _getAllHandler.Handle(new GetAllCustomersQuery(0, 0));
+            var result = await _updateHandler.Handle(cmd);
+
+            if (result.IsSuccess)
+                return Ok(new { success = true, customerId = result.Value });
+            else
+                return BadRequest(new { success = false, error = result.Error });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll(GetAllCustomersQuery cmd)
+        {
+            var result = await _getAllHandler.Handle(cmd);
 
             if (result != null && result.Any())
                 return Ok(new { success = true, count = result.Count, data = result });
