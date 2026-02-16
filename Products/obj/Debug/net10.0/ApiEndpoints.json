@@ -22,7 +22,78 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Ids.Value",
+        "Type": "System.Guid[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ids.Operator",
+        "Type": "Shared.Model.FilterOperator",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title.Value",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title.Operator",
+        "Type": "Shared.Model.FilterOperator",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price.Value.Amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price.Value.Currency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price.Operator",
+        "Type": "Shared.Model.FilterOperator",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description.Value",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description.Operator",
+        "Type": "Shared.Model.FilterOperator",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity.Value",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity.Operator",
+        "Type": "Shared.Model.FilterOperator",
+        "IsRequired": false
+      },
+      {
+        "Name": "Offset",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TopCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchText",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

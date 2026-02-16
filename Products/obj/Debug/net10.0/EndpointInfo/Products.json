@@ -39,6 +39,114 @@
         "tags": [
           "Product"
         ],
+        "parameters": [
+          {
+            "name": "Ids.Value",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          },
+          {
+            "name": "Ids.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Title.Value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Title.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Price.Value.Amount",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "Price.Value.Currency",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Price.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Description.Value",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Description.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Quantity.Value",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Quantity.Operator",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/FilterOperator"
+            }
+          },
+          {
+            "name": "Offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "TopCount",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SearchText",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -118,6 +226,21 @@
           }
         },
         "additionalProperties": false
+      },
+      "FilterOperator": {
+        "enum": [
+          "Equal",
+          "NotEqual",
+          "Contains",
+          "StartsWith",
+          "EndsWith",
+          "GreaterThan",
+          "LessThan",
+          "GreaterOrEqual",
+          "LessOrEqual",
+          "In"
+        ],
+        "type": "string"
       }
     }
   },

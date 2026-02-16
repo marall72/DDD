@@ -8,5 +8,6 @@ namespace Shared.Model
     {
         public int Offset { get; set; }
         public int TopCount { get; set; } = 1000;
+        public string? SearchText { get; set; }
     }
 }

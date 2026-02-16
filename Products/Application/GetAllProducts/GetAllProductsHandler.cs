@@ -15,7 +15,7 @@ namespace Products.Application.GetAllProducts
         //TODO: add paging and sorting
         public async Task<List<Product>> Handle(GetAllProductsQuery query)
         {
-            return await _repo.GetAllAsync();
+            return await _repo.GetAllAsync(query);
         }
     }
 }

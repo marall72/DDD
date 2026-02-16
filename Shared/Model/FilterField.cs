@@ -6,6 +6,11 @@ namespace Shared.Model
 {
     public class FilterField<T>
     {
+        public FilterField()
+        {
+            
+        }
+
         public FilterField(T? value, FilterOperator @operator)
         {
             Value = value;

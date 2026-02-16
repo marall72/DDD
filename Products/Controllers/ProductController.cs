@@ -39,9 +39,9 @@ namespace Products.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery]GetAllProductsQuery cmd)
         {
-            var result = await _getAllHandler.Handle(new GetAllProductsQuery(0, 0));
+            var result = await _getAllHandler.Handle(cmd);
 
             if (result != null && result.Any())
                 return Ok(new { success = true, count = result.Count, data = result });

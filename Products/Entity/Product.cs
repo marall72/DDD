@@ -6,12 +6,16 @@ namespace Products.Entity
     {
         public Product()
         {
-            
+
         }
 
         public Product(Guid id, string title, Price price, string description, int quantity)
         {
-            
+            Id = id;
+            Title = title;
+            Price = price;
+            Description = description;
+            Quantity = quantity;
         }
 
         public Guid Id { get; set; }

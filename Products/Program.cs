@@ -5,6 +5,7 @@ using Products.Application.GetAllProducts;
 using Products.Application.GetProductById;
 using Products.Data;
 using Products.Infrastructure;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +17,13 @@ builder.Services.AddScoped<CreateProductHandler>();
 builder.Services.AddScoped<DeleteProductHandler>();
 builder.Services.AddScoped<GetProductByIdHandler>();
 builder.Services.AddScoped<GetAllProductsHandler>();
-builder.Services.AddControllers();
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+
 builder.Services.AddSqlServer<AppDbContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
 builder.Services.AddSwaggerGen(c =>
 {
