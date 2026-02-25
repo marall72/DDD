@@ -6,3 +6,6 @@ I have used other technologies as:
 4. microservices
 5. DDD
 6. CQRS
+
+future plans:
+implement JWT and testing frameworks
