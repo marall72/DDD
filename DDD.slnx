@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Solution Items/" />
   <Project Path="Customers/Customers.csproj" />
+  <Project Path="Identity/Identity.csproj" Id="9457a5c1-7bbc-4df9-940c-002f0819dc05" />
+  <Project Path="Notification/Notification.csproj" Id="64d15823-3ddf-463a-9201-70578c219261" />
   <Project Path="Products/Products.csproj" />
   <Project Path="Shared/Shared.csproj" />
 </Solution>
