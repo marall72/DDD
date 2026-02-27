@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\katebi\\source\\repos\\DDD\\Notification\\Notification.csproj": {}
+    "C:\\Users\\maral\\Source\\repos\\DDD\\Notification\\Notification.csproj": {}
   },
   "projects": {
-    "C:\\Users\\katebi\\source\\repos\\DDD\\Notification\\Notification.csproj": {
+    "C:\\Users\\maral\\Source\\repos\\DDD\\Notification\\Notification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katebi\\source\\repos\\DDD\\Notification\\Notification.csproj",
+        "projectUniqueName": "C:\\Users\\maral\\Source\\repos\\DDD\\Notification\\Notification.csproj",
         "projectName": "Notification",
-        "projectPath": "C:\\Users\\katebi\\source\\repos\\DDD\\Notification\\Notification.csproj",
-        "packagesPath": "C:\\Users\\katebi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katebi\\source\\repos\\DDD\\Notification\\obj\\",
+        "projectPath": "C:\\Users\\maral\\Source\\repos\\DDD\\Notification\\Notification.csproj",
+        "packagesPath": "C:\\Users\\maral\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maral\\Source\\repos\\DDD\\Notification\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\katebi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maral\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

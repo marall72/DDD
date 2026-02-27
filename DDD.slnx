@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/" />
   <Project Path="Customers/Customers.csproj" />
   <Project Path="Identity/Identity.csproj" Id="9457a5c1-7bbc-4df9-940c-002f0819dc05" />
+  <Project Path="Log/Log.csproj" Id="6da1791b-3939-4cd1-bced-4fdbad5ada09" />
   <Project Path="Media/Media.csproj" Id="e252c7a6-9729-4dad-a47d-1b9c9aeb8522" />
   <Project Path="Notification/Notification.csproj" Id="64d15823-3ddf-463a-9201-70578c219261" />
   <Project Path="Products/Products.csproj" />
