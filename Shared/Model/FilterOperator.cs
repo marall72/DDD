@@ -9,6 +9,8 @@ namespace Shared.Model
         Equal,
         NotEqual,
         Contains,
+        //TODO: add not contains wherever applicable
+        NotContains,
         StartsWith,
         EndsWith,
         GreaterThan,
