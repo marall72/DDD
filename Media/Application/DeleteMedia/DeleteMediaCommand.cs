@@ -1,6 +1,4 @@
 ﻿namespace Media.Application.DeleteMedia
 {
-    public class DeleteMediaCommand
-    {
-    }
+    public record DeleteMediaCommand(Guid Id)
 }

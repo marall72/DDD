@@ -7,7 +7,7 @@
 
         }
 
-        public Media(Guid id, string title, string description, DateTime createDate, DateTime updateDate, string filename, string originalFilename, double sizeInKb, double width, double height)
+        public Media(Guid id, string title, string description, DateTime createDate, DateTime updateDate, string filename, string originalFilename, double sizeInKb)
         {
             Id = id;
             Title = title;
@@ -17,8 +17,6 @@
             FileName = filename;
             OriginalFileName = originalFilename;
             SizeInKb = sizeInKb;
-            Width = width;
-            Height = height;
         }
 
         public Guid Id { get; set; }
@@ -29,10 +27,8 @@
         public string FileName { get; set; }
         public string OriginalFileName { get; set; }
         public double SizeInKb { get; set; }
-        public double Width { get; set; }
-        public double Height { get; set; }
 
-        public static Media Create(Guid id, string title, string description, DateTime createDate, DateTime updateDate, string filename, string originalFilename, double sizeInKb, double width, double height)
+        public static Media Create(Guid id, string title, string description, DateTime createDate, DateTime updateDate, string filename, string originalFilename, double sizeInKb)
         {
             if (string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("Title is required.", nameof(title));
@@ -54,13 +50,7 @@
             if (sizeInKb <= 0)
                 throw new ArgumentException("Size in KB must be greater than zero.", nameof(sizeInKb));
 
-            if (width <= 0)
-                throw new ArgumentException("Width must be greater than zero.", nameof(width));
-
-            if (height <= 0)
-                throw new ArgumentException("Height must be greater than zero.", nameof(height));
-
-            return new Media(id, title, description, createDate, updateDate, filename, originalFilename, sizeInKb, width, height);
+            return new Media(id, title, description, createDate, updateDate, filename, originalFilename, sizeInKb);
         }
     }
 }
